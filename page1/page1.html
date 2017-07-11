@@ -1,0 +1,37 @@
+<div class="container">
+  
+  <div class="row">
+    <div class="col-md-3">
+      <h3>Student List:</h3>
+    </div>
+    <div class="col-md-5">
+      <h3>Search: <input type="text" ng-model="search"> </h3>
+    </div>
+    <div class="col-md-4">
+      <div class="msg1" ng-show="msg1"> <h3>{{msg1}}</h3>  </div>
+    </div>   
+  </div>
+
+
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Level</th>
+        <th width=200 >Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="student in data | filter:search">
+        <td>{{student.name}}</td>
+        <td>{{student.department}}</td>
+        <td>{{student.level}}</td>
+        <td>  
+            <a href="#!/page3/{{student.$id}}" class="btn btn-info">Edit</a> 
+            <a href="" ng-click="deleteStudent(student)" class="btn btn-danger">Delete</a> 
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>

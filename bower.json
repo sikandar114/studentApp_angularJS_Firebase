@@ -1,0 +1,11 @@
+{
+  "name": "angular-straterpack",
+  "description": "starter pack",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "firebase": "3.9.0",
+    "angularfire": "2.3.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "angularjs-starterpack",
+  "version": "1.0.0",
+  "description": "starter pack",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sikandar Abu Rakib",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  }
+}

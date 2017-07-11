@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>StudentsApp</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	  <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Students App with AngularJS+Firebase</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#!/page1">Home</a></li>
+            <li><a href="#!/page2">Add Student</a></li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="container">
+
+		<ng-view></ng-view>
+    </div>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/firebase/firebase.js"></script>
+<script src="bower_components/angularfire/angularfire.js"></script>
+<script src="app.js"></script>
+<script src="page1/page1.js"></script>
+<script src="page2/page2.js"></script>
+<script src="page3/page3.js"></script>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDL-WICZKquMSm3cqwXxxtmrh4vuBfFmnk",
+    authDomain: "students-21a2c.firebaseapp.com",
+    databaseURL: "https://students-21a2c.firebaseio.com",
+    projectId: "students-21a2c",
+    storageBucket: "students-21a2c.appspot.com",
+    messagingSenderId: "813821614402"
+  };
+  firebase.initializeApp(config);
+</script>
+</body>
+</html>
